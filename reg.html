@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+		<title>账户注册--肥猫网</title>
+		<!-- 标题图标 -->
+<link rel="shortcut icon" type="image/x-icon" href="logo/fcat.ico" />
+<link rel="stylesheet" href="css/reg.css">
+<link rel="stylesheet" href="css/verification.css">
+	</head>
+<body>
+
+			<form action="check_reg.html" method="post" onsubmit="return check()" >
+				<div class="phone">
+				<p>&emsp;手机号&emsp;<input type="text" name="phone" value="&nbsp&nbsp&nbsp请输入手机号">
+					<p>&emsp;用户名&emsp;<input type="text" name="username" value="&nbsp&nbsp&nbsp请输入用户名">
+					<p>输入密码&emsp;<input  name="password"  type="password">
+					<p>再次输入&emsp;<input name="passwd"type="password" >
+						<div>
+							   <!--时间：2017-01-11 描述：输入框ct100_textcode -->
+							   <input type="text" id="ctl00_txtcode" />
+							   <!--时间：2017-01-11 描述：把验证码定义为按钮，点击刷新-->
+							   <input type="button" id="code" onclick="createCode()" />
+							   <!--时间：2017-01-11 描述：验证按钮 -->
+				
+						 </div>
+						 <script src="js/verification.js"></script>
+					<p><input style="width:255px; height:40px;  background-color:#00BB00;color:white;font-size:20 "  type="submit" value="注册">
+			</form>
+					
+</body>
+</html>

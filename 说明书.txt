@@ -1,0 +1,10 @@
+
+===肥猫商城===
+	index.html--主页
+	reg.html--注册页面
+	check_reg.html--检查注册是否成功
+logo文件夹--网页图标
+js--存放js代码
+css--存放css代码
+commodity--存放不同类型商品网页
+roll--滚动图片

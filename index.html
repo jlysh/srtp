@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>肥猫网 - 宅! 舒服</title>
+
+<!-- 标题图标 -->
+<link rel="shortcut icon" type="image/x-icon" href="logo/fcat.ico" />
+
+<!-- 动态翻滚效果图 -->
+<style type="text/css">
+	*{margin:0;padding:0;list-style-type:none;}
+	a,img{border:0;}
+	/* flexslider */
+	.flexslider{position:relative;height:400px;overflow:hidden;background:url(roll/images/loading.gif) 50% no-repeat;}
+	.slides{position:relative;z-index:1;}
+	.slides li{height:400px;}
+	.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+	.flex-control-nav li{display:inline-block;width:14px;height:14px;margin:0 5px;*display:inline;zoom:1;}
+	.flex-control-nav a{display:inline-block;width:14px;height:14px;line-height:40px;overflow:hidden;background:url(roll/images/dot.png) right 0 no-repeat;cursor:pointer;}
+	.flex-control-nav .flex-active{background-position:0 0;}
+
+	.flex-direction-nav{position:absolute;z-index:3;width:100%;top:45%;}
+	.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+
+</style>
+
+
+</head>
+<body>
+
+<!-- 动态翻滚效果图 -->
+<div class="flexslider">
+	<ul class="slides">
+		<li style="background:url(roll/images/img1.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(roll/images/img2.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(roll/images/img3.jpg) 50% 0 no-repeat;"></li>
+		<li style="background:url(roll/images/img4.jpg) 50% 0 no-repeat;"></li>
+
+	</ul>
+</div>
+<script src="roll/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="roll/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.flexslider').flexslider({
+			directionNav: true,
+			pauseOnAction: false
+		});
+	});
+</script>
+
+<!-- 搜索商品 -->
+	<form action="search.jsp">
+
+		<p style="color:orange">导航猫
+		<input type="text" name="search" size="30">
+		<input type="submit" value="搜索"></p>
+	</form>
+	
+<!-- 用户登陆 -->
+	<table  style="margin-right:50px;margin-top:50px;">
+	<form action="login.jsp">
+		<br>用户名:<input type="text" name="username" size="20">
+		<br>密码:<input type="text" name="password" size="20">
+		<br><input type="submit" value="登陆">
+		<li>还没有注册？<a href="reg.html">立即注册</a>
+	</form>
+	</table>
+	<!-- 商品分类 -->
+		<table>
+		<td>
+			<br><tr><a href="commodity/Digital/index.html">数码3C</tr>
+			<br><tr><a href="commodity/Book/index.html">书籍</tr>
+			<br><tr><a href="commodity/Sundries/index.html">日用商品</tr>
+			<br><tr>可爱萌宠</tr>
+			<br><tr>美白护肤</tr>
+			<br><tr>游戏账号</tr>
+			<br><tr>药品</tr>
+			<br><tr>作业代写</tr>
+			<br><tr>替课预约</tr>
+			<br><tr>其他交易</tr>
+		</td>
+	</table>
+
+
+
+</body>
+</html>
